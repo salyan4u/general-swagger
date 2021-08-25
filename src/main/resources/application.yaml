@@ -1,0 +1,13 @@
+server:
+  forward-headers-strategy: framework
+  port: 9000
+
+application:
+  name: @project.artifactId@
+
+build:
+  version: @project.version@
+
+applications:
+  api:
+    names: nsi-service,file-storage,authorization,org-structure
