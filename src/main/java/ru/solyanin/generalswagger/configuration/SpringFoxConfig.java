@@ -1,4 +1,4 @@
-package ru.solyanin.configuration;
+package ru.solyanin.generalswagger.configuration;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -23,16 +23,15 @@ import java.util.List;
 public class SpringFoxConfig {
     @Bean
     public Docket api() {
-        Docket result = new Docket(DocumentationType.OAS_30)
+        return new Docket(DocumentationType.OAS_30)
                 .apiInfo(new ApiInfoBuilder()
                         .title("SwaggerService")
-                        .description("Общий сваггер для сервисов")
+                        .description("General swagger for services")
                         .build())
                 .select()
                 .apis(RequestHandlerSelectors.any())
                 .paths(PathSelectors.any())
                 .build();
-        return result;
     }
 
     @Primary

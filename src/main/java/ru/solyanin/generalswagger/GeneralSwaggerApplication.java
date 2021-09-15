@@ -1,4 +1,4 @@
-package ru.solyanin;
+package ru.solyanin.generalswagger;
 
 
 import org.springframework.boot.SpringApplication;

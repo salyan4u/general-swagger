@@ -17,7 +17,7 @@
     <description>General swagger</description>
 
     <properties>
-        <java.version>8</java.version>
+        <java.version>11</java.version>
     </properties>
 
     <dependencies>
@@ -91,7 +91,7 @@
                         </goals>
                         <configuration>
                             <mainClass>
-                                ru.solyanin.GeneralSwaggerApplication
+                                ru.solyanin.generalswagger.GeneralSwaggerApplication
                             </mainClass>
                         </configuration>
                     </execution>
@@ -132,7 +132,7 @@
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>libs/</classpathPrefix>
                             <mainClass>
-                                ru.solyanin.GeneralSwaggerApplication
+                                ru.solyanin.generalswagger.GeneralSwaggerApplication
                             </mainClass>
                         </manifest>
                     </archive>
